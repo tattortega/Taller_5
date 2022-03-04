@@ -19,6 +19,8 @@ Sistema orientado a REST
 
 Despues de clonar el proyecto, lo puede ejecutar con los siguientes comandos:
 
+> npm install -> Instalar modulos de dependencias
+
 > npm run dev -> Modo desarrollo
 
 > npm run start -> Modo estandar
