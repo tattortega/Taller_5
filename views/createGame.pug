@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1=title 
+  p Bienvenido al juego de dados para multiples jugadores
+  p Para crear una partida ingresa lo siguiente:
+    form(action="./createGame", method="post")
+        div(class="form")
+            label Id del juego
+                input(class="player", type="text", name="id", placeholder="Ej. 123" required)
+        div(class="form")
+            label Tipo de juego
+                input(class="player", type="text", name="type", placeholder="Ej. Parchis" required)     
+        div(class="form")
+            label Jugador #1 
+                input(class="player", type="text", name="player", placeholder="Nombre del jugador" required)
+        div(class="form")
+            label Jugador #2 
+                input(class="player", type="text", name="player", placeholder="Nombre del jugador"   required)
+        div(class="form")
+            label Jugador #3 
+                input(class="player", type="text", name="player", placeholder="Nombre del jugador"   required)
+        div(class="create")               
+            input(id="create", type="submit", value="Crear partida")

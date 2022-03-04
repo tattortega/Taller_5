@@ -1,0 +1,20 @@
+extends layout
+block content    
+    h1=title 
+    p Para iniciar la partida ingresa lo siguiente:
+    form(action="./startGame", method="post")
+        div(class="form")
+            label Id del juego
+                input(class="player", type="text", name="id" required)    
+        div(class="form")
+            label Apuesta Jugador #1 
+                input(class="player", type="text", name="playerBet", placeholder="Mínimo 1 - Máximo 12" required)
+        div(class="form")
+            label Apuesta Jugador #2 
+                input(class="player", type="text", name="playerBet", placeholder="Mínimo 1 - Máximo 12" required)
+        div(class="form")
+            label Apuesta Jugador #3 
+                input(class="player", type="text", name="playerBet", placeholder="Mínimo 1 - Máximo 12"  required)
+        div(class="create")               
+            input(id="create", type="submit", value="Iniciar partida")
+
